@@ -1,1 +1,60 @@
-Hello World
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <meta name="author" content="Apoorve Mohan" />
+      <meta name="description" content="Apoorve Mohan's personal web page" />
+  
+      <title>Apoorve Mohan</title>
+  
+      <link rel="stylesheet" href="media/css/style.css" type="text/css" />
+  </head>
+  
+  <body>
+    <!--Table Begins-->
+    <table  align="center" width="750" border="0" cellpadding="0">
+      <tr>
+        <td>
+          <div id="Contact"></div>
+        </td>
+        <td align="right">
+          <img src="media/imgs/nyc.jpg" height="200"></img>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <div id="Bio"></div>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <div id="Education"></div>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <div id="Experience"></div>
+        </td>
+      </tr>
+
+    </table>
+    <!--Table Ends-->
+  
+    <script>
+      $(function(){
+        $("#Contact").load("sections/about/contact.html"); 
+        $("#Bio").load("sections/about/bio.html"); 
+        $("#Experience").load("sections/about/experience.html"); 
+        $("#Education").load("sections/about/education.html"); 
+      });
+    </script>
+  </body>
+
+</html>
