@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <title>Apoorve Mohan: Thesis Proposal</title>
+  <style type="text/css">
+  /*<![CDATA[*/
+            .content
+            {
+                width: 40em;
+            }
+  /*]]>*/
+  </style>
+
+</head>
+<body>
+
+ <h2>Thesis Proposal: Strategies to Improve Operation and Usage of Bare-Metal
+Clusters</h2>
+
+ <h3>Overview</h3>
+  <p class="content">
+Although virtualized infrastructure can satisfy the requirements of various organizations, most performance and security-sensitive organizations demand to run their workloads directly on bare-metal servers. Such organizations are not willing to tolerate the performance unpredictability or security risks (e.g., side-channel attacks) due to co-location, and performance overhead or vulnerabilities due to a large code base of the complex virtualization stack. Moreover, organizations setting up virtualization-based cloud platforms (to offer public services or private use), or running workloads that require direct and exclusive access to hardware components that are either difficult to virtualize (such as InfiniBand, RAID, FPGAs, GPUs), also require bare-metal access. 
+ </p>
+
+  <p class="content">
+To run their workloads, such performance and security-sensitive organizations invest enormous sums of money to buy or rent infrastructure, and set-up and manage bare-metal clusters.
+ </p>
+
+  <p class="content">
+It is essential for organizations to efficiently operate and use these bare-metal clusters in order to maximize their returns on the investment. However, despite the intense research in the area of bare-metal cluster operability and usage, there exist the following issues that lead to inefficient operation and usage of bare-metal infrastructure:
+ </p>
+
+  <p class="content">
+<li> <b>Imaging and Elasticity:</b> Existing general-purpose bare-metal provisioning techniques deploy the intended software stack to the local storage present on the bare-metal server. Provisioning bare-metal servers to the local storage of bare-metal servers slows down the ability to rapidly add/remove bare-metal servers to a cluster. </li>
+ </p>
+
+  <p class="content">
+<li> <b>Introspectability:</b> Provisioning bare-metal servers to the local storage requires running an agent/client on them to introspect the deployed software stack. However, the integrity of the introspection agent/client remains questionable. Moreover, the complexity of managing these agents/clients is linearly correlated to the scale of bare-metal servers in the cluster. </li>
+ </p>
+
+  <p class="content">
+<li> <b>Aggregate Resource Usage:</b> Today, organizations host (co-locate) multiple bare-metal clusters running heterogeneous workloads in their data centers, which are known to exhibit heterogeneous resource utilization patterns. These resource utilization patterns tend to complement each at various time intervals and provides an opportunity for short-term bare-metal multiplexing of bare-metal servers between these co-located clusters for improving the aggregate resource usage for the organization. Traditionally, the co-located bare-metal clusters are siloed from each other, which makes it hard to exploit the complementary utilization patterns via short-term bare-metal multiplexing and improve the aggregate resource usage. </li>
+ </p>
+
+  <p class="content">
+<li> <b>Job Co-scheduling:</b> Job co-scheduling is common in throughput-oriented batch clusters. However, co-scheduling jobs that are not compatible, i.e., that contend for the same system resources can result in degradation. There have been several efforts that try to predict co-locatable jobs based on offline profiling. However, this requires a priori knowledge about the applications. Furthermore, in the case of misprediction, existing batch schedulers cannot adapt to the situation. </li>
+ </p>
+
+  <p class="content">
+Over the last decade, organizations have realized the advantages of having a data-driven enterprise, which has lead to a massive global increase in the number of computing facilities to process all that data. The surge in the number of data centers across the globe, thus calls for urgent resolution of the aforementioned bare-metal cluster operability and usage issues. 
+ </p>
+
+  <p class="content">
+This thesis focuses on general-purpose and workload-agnostic strategies to improve imaging and elasticity, introspectability, aggregate resource usage, and co-scheduling of batch jobs in bare-metal clusters.
+ </p>
+
+  <p class="content">
+<b>Thesis Statement:</b> Classically, diskless provisioning of bare-metal servers has been used to optimize for infrastructure cost, reduce server-level power consumption, and increase the reliability of compute-severs. This thesis demonstrates that diskless provisioning of bare-metal servers can as well be leveraged to improve imaging and elasticity, introspectability, and aggregate resource usage in bare-metal clusters. To further improve the efficiency of bare-metal clusters, this thesis proposes an adaptive co-scheduling mechanism for single-node batch jobs.
+</p>
+
+ <h3>Thesis Proposal</h3>
+ <p>
+ Download <a href="media/pdf/proposal.pdf">PDF</a> (574 KiB)
+ </p>
+
+ <h3>Thesis Committee</h3>
+ <ul>
+   <li><u>Gene Cooperman</u>, Professor, Northeastern University, Thesis Advisor, <a href="https://www.ccs.neu.edu/home/gene">Homepage</a></li>
+   <li><u>Peter Desnoyers</u>, Associate Professor, Northeastern University, <a href="https://www.ccs.neu.edu/home/pjd">Homepage</a></li>
+   <li><u>Orran Krieger</u>, Associate Professor, Boston University, <a href="https://www.bu.edu/eng/profile/orran-krieger/">Homepage</a></li>
+   <li><u>Devesh Tiwari</u>, Assistant Professor, Northeastern University, <a href="http://www.ece.neu.edu/people/tiwari-devesh">Homepage</a></li>
+   <li><u>Ningfang Mi</u>, Associate Professor, Northeastern University, <a href="http://www1.ece.neu.edu/~ningfang/">Homepage</a></li>
+   <li><u>Gheorghe Almasi</u>, Research Scientist, IBM T.J. Watson Research Center, Yorktown Heights, <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-gheorghe">Homepage</a></li>
+ </ul>
+
+</body>
+</html>
