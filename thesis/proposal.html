@@ -36,6 +36,7 @@ To run their workloads, such performance and security-sensitive organizations in
 It is essential for organizations to efficiently operate and use these bare-metal clusters in order to maximize their returns on the investment. However, despite the intense research in the area of bare-metal cluster operability and usage, there exist the following issues that lead to inefficient operation and usage of bare-metal infrastructure:
  </p>
 
+<ul>
 <li><p class="content"> <b>Imaging and Elasticity:</b> Existing general-purpose bare-metal provisioning techniques deploy the intended software stack to the local storage present on the bare-metal server. Provisioning bare-metal servers to the local storage of bare-metal servers slows down the ability to rapidly add/remove bare-metal servers to a cluster. </p></li>
  
 <li><p class="content"> <b>Introspectability:</b> Provisioning bare-metal servers to the local storage requires running an agent/client on them to introspect the deployed software stack. However, the integrity of the introspection agent/client remains questionable. Moreover, the complexity of managing these agents/clients is linearly correlated to the scale of bare-metal servers in the cluster. </p></li>
@@ -43,6 +44,7 @@ It is essential for organizations to efficiently operate and use these bare-meta
 <li><p class="content"> <b>Aggregate Resource Usage:</b> Today, organizations host (co-locate) multiple bare-metal clusters running heterogeneous workloads in their data centers, which are known to exhibit heterogeneous resource utilization patterns. These resource utilization patterns tend to complement each at various time intervals and provides an opportunity for short-term bare-metal multiplexing of bare-metal servers between these co-located clusters for improving the aggregate resource usage for the organization. Traditionally, the co-located bare-metal clusters are siloed from each other, which makes it hard to exploit the complementary utilization patterns via short-term bare-metal multiplexing and improve the aggregate resource usage. </p></li>
 
 <li><p class="content"> <b>Job Co-scheduling:</b> Job co-scheduling is common in throughput-oriented batch clusters. However, co-scheduling jobs that are not compatible, i.e., that contend for the same system resources can result in degradation. There have been several efforts that try to predict co-locatable jobs based on offline profiling. However, this requires a priori knowledge about the applications. Furthermore, in the case of misprediction, existing batch schedulers cannot adapt to the situation. </p></li>
+</ul>
 
   <p class="content">
 Over the last decade, organizations have realized the advantages of having a data-driven enterprise, which has lead to a massive global increase in the number of computing facilities to process all that data. The surge in the number of data centers across the globe, thus calls for urgent resolution of the aforementioned bare-metal cluster operability and usage issues. 
