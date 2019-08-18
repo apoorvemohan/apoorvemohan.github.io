@@ -7,7 +7,7 @@
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <meta name="robots" content="noindex, nofollow" />
 
-  <title>Apoorve Mohan: Thesis Proposal (Draft)</title>
+  <title>Apoorve Mohan: Thesis Proposal</title>
   <style type="text/css">
   /*<![CDATA[*/
             .content
@@ -15,6 +15,11 @@
                 width: 40em;
             }
   /*]]>*/
+.notbold{
+    font-weight: normal;
+    font-size: 90%;
+    font-style: italic;
+}
 ul {
   padding-left: 20px;
 }
@@ -23,10 +28,12 @@ ul {
 </head>
 <body>
 
- <h2>Thesis Proposal: Strategies to Improve Operation and Usage of Bare-Metal
-Clusters</h2>
+<h2>Thesis Proposal <span class='notbold'>(Draft)</span></h2>
 
- <h3>Overview</h3>
+ <h3>Title: Strategies to Improve Operation and Usage of Bare-Metal
+Clusters</h3>
+
+ <b>Overview</b>
   <p class="content">
 Although virtualized infrastructure can satisfy the requirements of various organizations, most performance and security-sensitive organizations demand to run their workloads directly on bare-metal servers. Such organizations are not willing to tolerate the performance unpredictability or security risks (e.g., side-channel attacks) due to co-location, and performance overhead or vulnerabilities due to a large code base of the complex virtualization stack. Moreover, organizations setting up virtualization-based cloud platforms (to offer public or on-premise services), or running workloads that require direct and exclusive access to hardware components that are either difficult to virtualize (such as InfiniBand, RAID, FPGAs, GPUs), also require bare-metal access.
  </p>
@@ -63,12 +70,14 @@ This thesis focuses on general-purpose and workload-agnostic strategies to impro
   <p class="content">
 <b>Thesis Statement:</b> Classically, diskless provisioning of bare-metal servers has been used to optimize for infrastructure cost, reduce server-level power consumption, and increase the reliability of compute-severs. This thesis demonstrates that diskless provisioning of bare-metal servers can as well be leveraged to improve elasticity, introspectability, and aggregate resource usage in bare-metal clusters. To further improve the efficiency of bare-metal clusters, this thesis proposes an adaptive co-scheduling mechanism for single-node batch jobs.</p>
 
- <h3>Thesis Proposal Document</h3>
+ <h3>Thesis Proposal Document</h3> 
  <p>
- Download <a href="/media/pdf/proposal.pdf">PDF</a> (574 KiB)
+ <ul>
+ <li> <a href="/media/pdf/proposal.pdf">Download Draft</a> <span class='notbold'>(PDF 575 KiB)</span></li>
+ </ul>
  </p>
 
- <h3>Thesis Committee (sorted by last name)</h3>
+ <h3>Thesis Committee <span class='notbold'>(sorted by <i>last-name</i>)</span></h3>
  <ul>
    <li><u>Gheorghe Almasi</u>, Research Scientist, IBM Research, <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-gheorghe">Homepage</a></li>
    <li><u>Gene Cooperman</u>, Professor, Northeastern University (Advisor) <a href="https://www.ccs.neu.edu/home/gene">Homepage</a></li>
