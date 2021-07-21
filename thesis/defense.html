@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <title>Apoorve Mohan: Thesis Proposal</title>
+  <style type="text/css">
+  /*<![CDATA[*/
+            .content
+            {
+                width: 40em;
+            }
+  /*]]>*/
+.notbold{
+    font-weight: normal;
+    font-size: 90%;
+    font-style: italic;
+}
+ul {
+  padding-left: 20px;
+}
+  </style>
+
+</head>
+<body>
+
+<h2>Thesis Proposal</h2>
+
+ <h3>Title: Rethinking the Choice between Static and Dynamic Provisioning for Centralized Bare-Metal Deployments</h3>
+
+ <b>Overview</b>
+  <p class="content">
+Many organizations have realized the cost benefits of consolidating their computing infrastructure over managing multiple, relatively smaller compute facilities.
+
+Over the past decade, virtual infrastructure solutions have become the obvious choice in consolidated (i.e., single-tenant managed or centralized) deployments for many organizations due to the scalability, availability, and cost benefits it offers.
+
+However, most performance and security-sensitive organizations such as medical companies and hospitals, financial institutions, federal agencies run their workloads directly on physical (i.e., bare-metal) infrastructure.
+They are unwilling to tolerate the performance unpredictability and security risks due to co-location and performance overhead or vulnerabilities due to a large code base of the complex virtualization stack.
+
+Besides, more generally, organizations also prefer bare-metal infrastructure when they want to set up their virtualization software stack for offering cloud services (either public or on-premise) and fend off against issues due to nested virtualization, or when their workloads require direct and exclusive access to hardware components (e.g., InfiniBand, RAID, FPGAs, GPUs) that are difficult to virtualize.
+
+Such organizations invest enormous sums of money to buy or rent bare-metal servers and set up and manage bare-metal clusters.
+Thus, it is imperative that these organizations efficiently operate and utilize the bare-metal clusters they set up to maximize their investment returns.
+
+However, despite the technological advances over the past decade, organizations continually employ static provisioning strategies in bare-metal deployments that contributes to poor aggregate bare-metal resource efficiency.
+
+<b>Thesis Statement:</b> This thesis demonstrates how dynamic provisioning can mitigate observed inefficiencies in centralized bare-metal deployments.
+The proposed dynamic provisioning strategies leverages existing storage disaggregation and fault-tolerance technologies to improve aggregate bare-metal resource efficiency.
+By applying it to four real-world scenarios, this thesis demonstrates the effectiveness of dynamic provisioning.
+</p>
+
+ <h3>Thesis Document</h3> 
+ <p>
+ <ul>
+ <li> <a href="/media/pdf/thesis.pdf">Download</a> <span class='notbold'>(PDF 3.5 MiB)</span></li>
+ </ul>
+ </p>
+
+ <h3>Thesis Committee </h3>
+ <ul>
+   <li><u>Gene Cooperman</u>, Professor, Northeastern University <a href="https://www.ccs.neu.edu/home/gene">Homepage</a>  <i><span class='notbold'>(Advisor)</span></i></li> 
+   <li><u>Orran Krieger</u>, Associate Professor, Boston University, <a href="https://www.bu.edu/eng/profile/orran-krieger/">Homepage</a>  <i><span class='notbold'>(Advisor)</span></i></li>
+   <li><u>Ningfang Mi</u>, Associate Professor, Northeastern University, <a href="http://www1.ece.neu.edu/~ningfang/">Homepage</a></li>
+   <li><u>Devesh Tiwari</u>, Assistant Professor, Northeastern University, <a href="http://www.ece.neu.edu/people/tiwari-devesh">Homepage</a></li>
+   <li><u>Peter Desnoyers</u>, Associate Professor, Northeastern University, <a href="https://www.ccs.neu.edu/home/pjd">Homepage</a></li>
+   <li><u>Gheorghe Almasi</u>, Research Scientist, IBM Research, <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-gheorghe">Homepage</a></li>
+ </ul>
+
+</body>
+</html>
